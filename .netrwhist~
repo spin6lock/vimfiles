@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/john/work/release/client/lib'
+let g:netrw_dirhist_2='/home/john/work/release/band'
+let g:netrw_dirhist_3='/tmp/ZWiki/docs'
+let g:netrw_dirhist_4='/tmp/ZWiki/experimental'
+let g:netrw_dirhist_5='/tmp/ZWiki'
+let g:netrw_dirhist_6='/home/john/work/release/battle'

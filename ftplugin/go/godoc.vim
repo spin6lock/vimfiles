@@ -1,0 +1,1 @@
+ftplugin/go/godoc.vim
