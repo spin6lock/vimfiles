@@ -1,0 +1,7 @@
+I find a solution to manage my vim plugins. I write some scripts to do this.
+
+Steps:
+# 1: define plugin info in bundle.json.
+# 2: run "create.py" to create "download.sh".
+# 3: run "download.sh" to download plugins.
+# 4: run "update.sh" to update.
