@@ -1,1 +1,0 @@
-syntax/godoc.vim
