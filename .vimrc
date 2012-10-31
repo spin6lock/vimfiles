@@ -4,6 +4,7 @@
 
 " 初始化 {{{1
 " ======
+set rtp+=$GOROOT/misc/vim
 
 " 关闭 vi 的兼容
 set nocompatible
