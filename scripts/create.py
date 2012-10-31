@@ -4,7 +4,7 @@
 import json
 import os
 
-header = '''#!/bin/bash
+header = '''#!/usr/bin/env bash
 
 function color_echo() {
 	echo -e "\e[1;33m$@\e[0m"
