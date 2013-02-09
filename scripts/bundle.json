@@ -9,10 +9,6 @@
 			"repo":"git://github.com/vim-scripts/genutils.git"
 		},
 		{
-			"name":"lookupfile",
-			"repo":"git://github.com/vim-scripts/lookupfile.git"
-		},
-		{
 			"name":"nerdtree",
 			"repo":"git://github.com/vim-scripts/The-NERD-tree.git"
 		},
@@ -23,6 +19,10 @@
 		{
 			"name":"quickfixsigns",
 			"repo":"git://github.com/tomtom/quickfixsigns_vim.git"
+		},
+		{
+			"name":"ctrlp",
+			"repo":"git://github.com/kien/ctrlp.vim.git"
 		}
 	]
 }
