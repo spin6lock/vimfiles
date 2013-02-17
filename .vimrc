@@ -16,7 +16,7 @@ set nocompatible
 source $VIMRUNTIME/macros/matchit.vim
 
 " 使用跟 Windows 兼容的快捷键设定
-source $VIMRUNTIME/mswin.vim
+"source $VIMRUNTIME/mswin.vim
 
 " Windows 特别设置
 if has("win32")
@@ -109,11 +109,12 @@ filetype on
 filetype plugin on                 " 开启文件类型插件
 filetype indent on                 " 开启文件类型自动缩进
 syntax enable                      " 开启语法高亮
-try                                " 设置色彩方案
-    colorscheme firefly
-catch
-    colorscheme desert
-endtry
+"try                                " 设置色彩方案
+"    colorscheme firefly
+"catch
+"    colorscheme desert
+"endtry
+colorscheme desert
 
 " 不同界面特别设置
 if has("gui_running")              " 使用GUI时
@@ -128,7 +129,7 @@ else                               " 使用CLI时
     if &term == "xterm"            " 虚拟终端
         set t_Co=256               " 终端颜色数
     elseif &term == "linux"        " 控制台
-        colorscheme torte          " 设置色彩方案
+        colorscheme desert			" 设置色彩方案
     endif
 endif
 
@@ -170,8 +171,6 @@ nnoremap <leader>m :set colorcolumn=81<cr>
 nnoremap <leader>M :set colorcolumn=""<cr>
 
 " 取消查找高亮
-nnoremap <a-/> :nohlsearch<cr>
-inoremap <a-/> <esc>:nohlsearch<cr>i
 nnoremap <leader>/ :nohlsearch<cr>
 
 " 样式 {{{2
@@ -191,9 +190,6 @@ nnoremap <leader>fi :set foldmethod=indent<cr>
 
 " 将自动折叠等级设置为1
 nnoremap <leader>fl :set foldlevel=1<cr>
-
-" 移动 {{{2
-" ----
 
 " 行间 {{{3
 " ~~~~
@@ -221,12 +217,6 @@ inoremap <a-o> <esc>o
 " 在光标上插入新行
 inoremap <a-O> <esc>O
 
-" 插入当前行第一个单词到下一行,用b寄存器
-inoremap <a-b> <esc>^"byeo<c-r>b
-
-" 插入光标出上一行单词，用g寄存器
-inoremap <a-g> <esc>keb"gyejA<c-r>i
-
 " 删除 {{{3
 " ~~~~
 
@@ -244,11 +234,11 @@ inoremap <a-S> <esc>di"i
 
 " 查找和替换 {{{2
 " ----------
+" 查找visual模式下选中的文字
+vnoremap // y/<C-R>"<CR>
 
-" 全文
-nnoremap <a-s> :%s/
-inoremap <a-s> <esc>:%s/
-nnoremap <leader>s :%s/
+" 替换光标所在变量
+nnoremap gr gD:%s/<C-R>///gc<left><left><left>
 
 " 选择
 vnoremap <a-s> <esc>:s/
@@ -454,3 +444,6 @@ endif
 nmap <silent> <leader>ll :LUBufs<cr>
 nmap <silent> <leader>lk :LUTags<cr>
 
+"ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
