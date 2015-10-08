@@ -17,8 +17,12 @@
 			"repo":"git://github.com/vim-scripts/taglist.vim.git"
 		},
 		{
-			"name":"quickfixsigns",
-			"repo":"git://github.com/tomtom/quickfixsigns_vim.git"
+			"name":"vim-go",
+			"repo":"https://github.com/fatih/vim-go.git"
+		},
+		{
+			"name":"sproto",
+			"repo":"git://github.com/spin6lock/vim_sproto.git"
 		},
 		{
 			"name":"ctrlp",
