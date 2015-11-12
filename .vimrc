@@ -88,7 +88,7 @@ set wildignore+=*.DS_Store                       " OSX 糟糕物
 
 set autoindent                     " 开启自动缩进
 set cindent                        " 开启C语言的自动缩进
-"set expandtab                      " 开启把Tab扩展为空格
+set expandtab                      " 开启把Tab扩展为空格
 set tabstop=4                      " 设置Tab宽度为4个字符
 set softtabstop=4                  " 软缩进宽度
 set shiftwidth=4                   " 设置移动代码块宽度
@@ -409,7 +409,7 @@ nmap <leader>cp :cp<cr>
 nmap <leader>cw :cw 10<cr>
 
 "taglist设置
-let Tlist_Ctags_Cmd = "/usr/local/bin/exctags"
+let Tlist_Ctags_Cmd = "/usr/bin/ctags"
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Show_One_File = 1
 let Tlist_Auto_Update=1
@@ -419,7 +419,7 @@ let tlist_lpc_settings = 'c;d:macro;g:enum;s:struct;u:union;t:typedef;' .
 map <silent> <F9> :TlistToggle<cr>
 
 "cscope setting
-set csprg=/usr/local/bin/cscope
+set csprg=/usr/bin/cscope
 set csto=1
 set cst
 set nocsverb
@@ -432,7 +432,7 @@ map <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
 map <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
 
 "ctags设置
-set tags=./tags;,
+set tags=./tags,tags;$HOME
 
 "lookupfile设置
 let g:LookupFile_MinPatLength = 2
@@ -447,3 +447,9 @@ nmap <silent> <leader>lk :LUTags<cr>
 "ctrlp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_max_files = 0
+
+"golang
+set rtp+=$GOROOT/misc/vim
+
+
