@@ -4,5 +4,5 @@ cd ~/.vim/scripts
 python create.py
 ./download.sh
 cd ../
-mv ~/.vimrc ~/.vimrc.old
+[ -e ~/.vimrc ] && mv ~/.vimrc ~/.vimrc.old
 ln -s ~/.vim/.vimrc ~/.vimrc
