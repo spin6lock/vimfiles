@@ -432,7 +432,7 @@ map <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
 map <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
 
 "ctags设置
-set tags=./tags,tags;$HOME
+set tags=./tags,tags;
 
 "lookupfile设置
 let g:LookupFile_MinPatLength = 2
@@ -448,8 +448,8 @@ nmap <silent> <leader>lk :LUTags<cr>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_max_files = 0
+let g:ctrlp_working_path_mode = 0
 
 "golang
 set rtp+=$GOROOT/misc/vim
-
 
