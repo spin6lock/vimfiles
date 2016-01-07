@@ -1,0 +1,8 @@
+#!/bin/bash
+mv ~/vimfiles ~/.vim
+cd ~/.vim/scripts
+python create.py
+./download.sh
+cd ../
+mv ~/.vimrc ~/.vimrc.old
+ln -s ~/.vim/.vimrc ~/.vimrc
