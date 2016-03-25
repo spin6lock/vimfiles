@@ -27,6 +27,10 @@
 		{
 			"name":"ctrlp",
 			"repo":"git://github.com/kien/ctrlp.vim.git"
-		}
+		},
+        {
+            "name":"vim-markdown",
+            "repo":"https://github.com/plasticboy/vim-markdown.git"
+        }
 	]
 }
