@@ -1,8 +1,0 @@
-#!/bin/bash
-mv ~/vimfiles ~/.vim
-cd ~/.vim/scripts
-python create.py
-./download.sh
-cd ../
-[ -e ~/.vimrc ] && mv ~/.vimrc ~/.vimrc.old
-ln -s ~/.vim/.vimrc ~/.vimrc

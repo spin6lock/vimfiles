@@ -26,9 +26,6 @@ endif
 " 第三方插件 {{{2
 " ----------
 
-" 使用 pathogen 插件
-call pathogen#infect()
-
 " 选项 {{{1
 " ====
 
@@ -453,3 +450,15 @@ let g:ctrlp_working_path_mode = 0
 "golang
 set rtp+=$GOROOT/misc/vim
 
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/vim-easy-align'
+Plug 'corntrace/bufexplorer'
+Plug 'vim-scripts/genutils'
+Plug 'vim-scripts/The-NERD-tree'
+Plug 'vim-scripts/taglist.vim'
+Plug 'spin6lock/vim_sproto'
+Plug 'kien/ctrlp.vim'
+Plug 'plasticboy/vim-markdown'
+Plug 'Valloric/YouCompleteMe'
+
+call plug#end()
