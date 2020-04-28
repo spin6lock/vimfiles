@@ -446,6 +446,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_max_files = 0
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_user_cmd = 'fd -e py -e lua -e c -e h'
 
 "golang
 set rtp+=$GOROOT/misc/vim
@@ -457,8 +458,9 @@ Plug 'vim-scripts/genutils'
 Plug 'vim-scripts/The-NERD-tree'
 Plug 'vim-scripts/taglist.vim'
 Plug 'spin6lock/vim_sproto'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'Valloric/YouCompleteMe'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
