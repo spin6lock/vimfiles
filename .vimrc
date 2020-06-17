@@ -446,7 +446,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_max_files = 0
 let g:ctrlp_working_path_mode = 0
-let g:ctrlp_user_cmd = 'fd -e py -e lua -e c -e h'
+let g:ctrlp_user_command = 'fd -e py -e lua -e c -e h --full-path %s'
 
 "golang
 set rtp+=$GOROOT/misc/vim
