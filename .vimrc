@@ -462,5 +462,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'Valloric/YouCompleteMe'
 Plug 'tpope/vim-fugitive'
+Plug 'bogado/file-line'
 
 call plug#end()
