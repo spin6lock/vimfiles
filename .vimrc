@@ -442,11 +442,9 @@ nmap <silent> <leader>ll :LUBufs<cr>
 nmap <silent> <leader>lk :LUTags<cr>
 
 "ctrlp
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_max_files = 0
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_user_command = 'fd -e py -e lua -e c -e h --full-path %s'
+nmap <C-P> :FZF<CR>
+"let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true, 'yoffset': 1.0 } }
+let g:fzf_layout = { 'down': '40%' }
 
 "golang
 set rtp+=$GOROOT/misc/vim
@@ -462,11 +460,11 @@ Plug 'vim-scripts/genutils'
 Plug 'vim-scripts/The-NERD-tree'
 Plug 'vim-scripts/taglist.vim'
 Plug 'spin6lock/vim_sproto'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'Valloric/YouCompleteMe'
 Plug 'tpope/vim-fugitive'
 Plug 'bogado/file-line'
 Plug 'maralla/validator.vim'
+Plug 'junegunn/fzf'
 
 call plug#end()
