@@ -453,6 +453,9 @@ set rtp+=$GOROOT/misc/vim
 let g:validator_lua_checkers = ['luacheck']
 let g:validator_lua_luacheck_args = '--no-color --config /home/spin6lock/luacheckrc'
 
+"search by ripgrep
+map <C-k> :Rg<CR>
+
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 Plug 'corntrace/bufexplorer'
@@ -466,5 +469,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'bogado/file-line'
 Plug 'maralla/validator.vim'
 Plug 'junegunn/fzf'
+Plug 'jremmen/vim-ripgrep'
 
 call plug#end()
